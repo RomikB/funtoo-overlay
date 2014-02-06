@@ -1,13 +1,17 @@
 # Keep the most recent masks in a reverse chrono order
 # newest on top
+# FL-999, update to ati-drivers-13.12 with newer kernel fixes, masked fo testing
+=x11-drivers/ati-drivers-13.12 
 
-# Daniel Robbins (08 Dec 2013)
-# masked for testing
-=x11-drivers/ati-drivers-13.11_beta9-r4
+# Oleg Vinichenko (13 Dec 2014)
+# FL-969: lvm2 update, hard masked for testing. Ebuild needs some fixes with udev deps
+=sys-fs/lvm2-2.02.103 
 
 # Oleg Vinichenko (24 Oct)
 # debian-sources-3.11.5, masked for testing, XFS issue FL-823
-=sys-kernel/debian-sources-3.11.5
+# FL-823, newer kernels to test
+=sys-kernel/debian-sources-3.11.10
+=sys-kernel/debian-sources-3.12.3
 
 # Daniel Robbins (28 Sep 2013)
 # masked for testing
